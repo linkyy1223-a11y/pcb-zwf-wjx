@@ -1,11 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<title>PCB NFC项目</title>
-</head>
-<body>
-<h1>PCB NFC 项目页面</h1>
-<p>页面开发中</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="赵维凤与王嘉轩的相遇、相识与相知。把每一个普通又珍贵的瞬间，慢慢讲给以后听。"
+    />
+    <meta name="theme-color" content="#21141a" />
+    <title>赵维凤与王嘉轩 | 从惊鸿一瞥，到余生漫长</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2321141a'/%3E%3Cpath d='M32 50C19 40 11 31 11 22c0-7 5-12 12-12 4 0 7 2 9 5 2-3 5-5 9-5 7 0 12 5 12 12 0 9-8 18-21 28Z' fill='%23d87a8f'/%3E%3C/svg%3E"
+    />
+    <link rel="preload" as="image" href="assets/photos/01-01.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-music-src="">
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="night-stars" id="nightStars" aria-hidden="true"></div>
+    <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+    <div class="floating-ribbons" id="floatingRibbons" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到故事开头">
+        <span class="brand-mark">ZW</span>
+        <span class="brand-name">赵维凤与王嘉轩</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="hero-origin">
+            <span class="origin-heart" aria-hidden="true"></span>
+            故事从一次唱歌开始
+          </p>
+          <h1 aria-label="赵维凤与王嘉轩">
+            <span>赵维凤</span>
+            <em>与</em>
+            <span>王嘉轩</span>
+          </h1>
+          <p class="hero-subtitle">你是我惊鸿一瞥后的漫长心动。</p>
+          <a class="scroll-link" href="#prologue">
+            <span>沿着红线往下走</span>
+            <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="hero-gallery" aria-label="我们的照片">
+          <figure class="hero-photo hero-photo-back">
+            <img
+              src="assets/photos/06-01.webp"
+              alt="维凤朋友圈里最有活力的一张照片"
+              width="1080"
+              height="1440"
+            />
+            <span class="photo-tape" aria-hidden="true"></span>
+          </figure>
+          <figure class="hero-photo hero-photo-side">
+            <img
+              src="assets/photos/19-02.webp"
+              alt="我们成为情侣那天的照片"
+              width="1600"
+              height="1200"
+            />
+            <span class="photo-tape" aria-hidden="true"></span>
+          </figure>
+          <figure class="hero-photo hero-photo-main">
+            <img
+              src="assets/photos/01-01.webp"
+              alt="军训时还没有认识的维凤"
+              width="960"
+              height="1280"
+            />
+            <figcaption>一切还没开始，你已经走进了我的故事。</figcaption>
+          </figure>
+          <span class="hero-scribble" aria-hidden="true">
+            <svg viewBox="0 0 180 72" role="presentation">
+              <path d="M3 50C37 4 54 5 61 32c5 20 11 23 19 6 10-21 22-23 30 2 7 21 15 20 25-1 8-18 18-23 40-28" />
+            </svg>
+          </span>
+        </div>
+      </section>
+
+      <section class="prologue" id="prologue" aria-labelledby="prologue-title">
+        <div class="prologue-inner">
+          <p class="prologue-year">相遇之后</p>
+          <h2 id="prologue-title">我们把普通的日子，过成了值得收藏的故事。</h2>
+          <div class="memory-counts" aria-label="故事统计">
+            <div class="memory-count">
+              <strong>21</strong>
+              <span>个片段</span>
+            </div>
+            <span class="count-divider" aria-hidden="true"></span>
+            <div class="memory-count">
+              <strong>41</strong>
+              <span>张照片</span>
+            </div>
+            <span class="count-divider" aria-hidden="true"></span>
+            <div class="memory-count">
+              <strong>1</strong>
+              <span>个我们</span>
+            </div>
+          </div>
+        </div>
+        <div class="prologue-heart" aria-hidden="true">
+          <i data-lucide="heart"></i>
+        </div>
+      </section>
+
+      <section class="story" id="story" aria-labelledby="story-title">
+        <header class="story-header">
+          <p class="story-intro">从陌生到熟悉，从偷偷喜欢到并肩向前。</p>
+          <h2 id="story-title">每一段，都有我想对你说的话。</h2>
+        </header>
+
+        <div class="story-body" id="storyBody">
+          <div class="story-river" id="storyRiver" aria-hidden="true">
+            <svg class="river-svg" id="riverSvg" preserveAspectRatio="none">
+              <path class="river-bed" id="riverBed"></path>
+              <path class="river-flow" id="riverFlow"></path>
+              <path class="river-progress" id="riverProgress"></path>
+            </svg>
+            <span class="river-tip" id="riverTip">
+              <i data-lucide="heart"></i>
+            </span>
+          </div>
+          <div class="chapter-list" id="chapterList"></div>
+        </div>
+      </section>
+
+      <section class="ending" id="ending" aria-labelledby="ending-title">
+        <div class="ending-collage" aria-hidden="true">
+          <img src="assets/photos/20-01.webp" alt="" width="1200" height="1600" />
+          <img src="assets/photos/21-02.webp" alt="" width="1440" height="1291" />
+        </div>
+        <div class="ending-copy">
+          <h2 id="ending-title">故事未完，往后的每一天都算数。</h2>
+          <p>
+            谢谢你来见我，也谢谢你愿意让我一点点走近。以后想陪你看很多次日落，走很多段路，把每一个平凡日子都过成值得记住的样子。
+          </p>
+          <div class="ending-signature">
+            <span>王嘉轩</span>
+            <i data-lucide="heart" aria-hidden="true"></i>
+            <span>赵维凤</span>
+          </div>
+          <a class="replay-link" href="#top">
+            <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+            再看一遍我们的故事
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>写给赵维凤</span>
+      <span>故事还在继续</span>
+    </footer>
+
+    <aside class="story-toolbar" aria-label="故事阅读控制">
+      <button
+        class="control-button"
+        id="motionToggle"
+        type="button"
+        aria-pressed="true"
+        title="暂停自动滚动"
+      >
+        <i data-lucide="pause" aria-hidden="true"></i>
+        <span id="motionLabel">缓滚中</span>
+      </button>
+      <button
+        class="control-button"
+        id="musicToggle"
+        type="button"
+        aria-pressed="false"
+        title="播放背景音乐"
+      >
+        <i data-lucide="music-2" aria-hidden="true"></i>
+        <span id="musicLabel">音乐</span>
+      </button>
+    </aside>
+
+    <nav class="chapter-rail" id="chapterRail" aria-label="章节导航">
+      <span class="rail-index" id="railCurrent">01</span>
+      <div class="rail-dots" id="railDots"></div>
+      <span class="rail-total">21</span>
+    </nav>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到开头" title="回到开头">
+      <i data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption">
+      <div class="lightbox-topbar">
+        <span id="lightboxMeta"></span>
+        <form method="dialog">
+          <button class="icon-button" type="submit" aria-label="关闭照片" title="关闭照片">
+            <i data-lucide="x" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="上一张照片">
+        <i data-lucide="arrow-left" aria-hidden="true"></i>
+      </button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="下一张照片">
+        <i data-lucide="arrow-right" aria-hidden="true"></i>
+      </button>
+      <p class="lightbox-counter" id="lightboxCounter"></p>
+    </dialog>
+
+    <div class="sr-only" id="liveRegion" aria-live="polite"></div>
+    <noscript>请开启 JavaScript 以阅读这段故事。</noscript>
+
+    <script src="assets/vendor/lucide.min.js"></script>
+    <script src="story-data.js"></script>
+    <script src="music-playlist.js"></script>
+    <script src="script.js"></script>
+    <script src="effects.js"></script>
+  </body>
 </html>
